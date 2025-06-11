@@ -9,7 +9,7 @@ There are no commercially avaialble off the shelf tools to record what is needed
 
 
 # Hardware Needed
-All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025)
+All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices)
 
 - Raspberry Pi Zero 2 W
 - Adafruit INA260 Breakout Voltage and Current Sensor
@@ -18,3 +18,15 @@ All hardware can be obtained easily from thepihut or Amazon. Total cost is aroun
 - Optional: GPS Antenna and connecting cable
 - Various wires and connectors to link things together
 - 
+
+# Setting up the raspberry Pi
+
+## Initial Setup
+
+The raspberry pi should have the latest RasberryPi OS running on it, setup as per the instructions on the Rasberry Pi Website. Use the raspberry Pi imager to get the pi setup with wifi networking and ssh (so we can connect to it remotely).
+
+Check and verify that it is possible to connect to the RPi using ssh (linux) or PuTTY (windows). There are plenty of tutorials out there to assist with this step, but if you can log into the Pi Remotely using these tools, then we're good to start the next step!
+
+# Installation and Connection of the Screen Module
+
+
