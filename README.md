@@ -42,13 +42,19 @@ To be able to test the screen we first need to enable the drivers for the screen
 
 1. Log into the RPi
 2. Run the RPi configuration utility
-        sudo raspi-config
-3. From the Interfaces option, enable the I2C interface
-4. Save the settings
-5. Restart the RPi
-6. Once it has restarted, we can check the I2C interface is running by using
-         lsmod | grep i2c
-   If the RPi bus is up and running then you should see something like the following
+
+```
+sudo raspi-config
+```
+
+4. From the Interfaces option, enable the I2C interface
+5. Save the settings
+6. Restart the RPi
+7. Once it has restarted, we can check the I2C interface is running by using
+```
+lsmod | grep i2c
+```
+8. If the RPi bus is up and running then you should see something like the following
 
    <Insert Picture Here>
 
@@ -56,10 +62,11 @@ Once it's restarted we then need to install some modules to help us work with th
 
 1. Log into the RPi
 2. At a command prompt run the following to install I2C-tools
-        sudo apt-get install i2c-tools
-3. Install the python smbus modules so we can control the device from python 
-        sudo apt-get install python-smbus
-         sudo apt-get install python3-smbus
-   
-5. Install I2C Device Detection
-           i2c
+```
+sudo apt-get install i2c-tools
+```
+4. Install the python smbus modules so we can control the device from python
+```
+sudo apt-get install python-smbus
+sudo apt-get install python3-smbus
+```   
