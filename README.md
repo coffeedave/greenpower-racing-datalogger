@@ -65,9 +65,11 @@ Once it's restarted we then need to install some modules to help us work with th
 ```
 sudo apt-get install i2c-tools
 ```
-4. Install the python smbus modules so we can control the device from python
+4. Install the python smbus modules so we can control the device from python. These provide the connection between python and the underlying hardware.
 ```
 sudo apt-get install python-smbus
 sudo apt-get install python3-smbus
 ```   
 5. If you get messages saying these modules are already installed and up to date, then that is fine.
+
+pip3 install Adafruit-Blinka
