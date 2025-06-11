@@ -27,6 +27,39 @@ The raspberry pi should have the latest RasberryPi OS running on it, setup as pe
 
 Check and verify that it is possible to connect to the RPi using ssh (linux) or PuTTY (windows). There are plenty of tutorials out there to assist with this step, but if you can log into the Pi Remotely using these tools, then we're good to start the next step!
 
-# Installation and Connection of the Screen Module
+## Building the Data Logger
 
+To create the data logger, it makes sense to test each component individually with the RPi, get it working, and be able to write some code to control it. That way you get familiar with how each component works, understand how to connect it up, and ensure that the RPi can use each successfully. One all components are working, we can then connect everything up and write some code to link them all together into the full scale data logger!
 
+We are going to be using Python as the programming language for each module, so it will be easy to combine the code for each component together at the end.
+
+Each of the next sections can be done in any order, but make sure each is working before you move on.
+
+### Installation and Testing of the Screen Module
+The official installation instrcutions for the freenove module that is used in the intial build of the data logger can be found here: https://github.com/Freenove/Freenove_LCD_Module/archive/refs/heads/main.zip
+
+To be able to test the screen we first need to enable the drivers for the screen on the RPi as well as the interface commands it will be using. This screen uses the I2C serial interface on the Pi, so we need to turn it on to be able to use it.
+
+1. Log into the RPi
+2. Run the RPi configuration utility
+        sudo raspi-config
+3. From the Interfaces option, enable the I2C interface
+4. Save the settings
+5. Restart the RPi
+6. Once it has restarted, we can check the I2C interface is running by using
+         lsmod | grep i2c
+   If the RPi bus is up and running then you should see something like the following
+
+   <Insert Picture Here>
+
+Once it's restarted we then need to install some modules to help us work with the I2C interface
+
+1. Log into the RPi
+2. At a command prompt run the following to install I2C-tools
+        sudo apt-get install i2c-tools
+3. Install the python smbus modules so we can control the device from python 
+        sudo apt-get install python-smbus
+         sudo apt-get install python3-smbus
+   
+5. Install I2C Device Detection
+           i2c
