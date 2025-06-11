@@ -56,7 +56,7 @@ lsmod | grep i2c
 ```
 8. If the RPi bus is up and running then you should see something like the following
 
-   <Insert Picture Here>
+!(https://github.com/coffeedave/ghs-racing-datalogger/images/Screenshot 2025-06-11 191118.png)
 
 Once it's restarted we then need to install some modules to help us work with the I2C interface
 
