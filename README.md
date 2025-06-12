@@ -1,4 +1,4 @@
-# ghs-racing-datalogger
+# GHS Racing Datalogger
 Project to Create and document creation of a Raspberri Pi Zero 2 based data logger for Greenpower Electric Car Racing
 
 GHS have an electric car racing team that competes in the [GreenPower Formula 24](https://www.greenpower.co.uk/) racing series. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
@@ -7,6 +7,15 @@ There are no commercially avaialble off the shelf tools to record what is needed
 
 # High Level Design Overview
 
+The overall goal is to get a set of data about the car with timestamps that can be analysed by the team after each race or practice session. For the the initial version of the datalogger the following sensors are to be used:
+
+- GPS Sensor for location, speed and for accurate clock timing
+- Current / Voltage Sensor to measure battery usage and motor power
+- Temperature sensor to measure the motor temperature and understand if it is overheating
+
+Each of these sesnors is connected to a Raspberry Pi which reads from them frequently and writes the details from each to a file.
+
+After the race, the file can be copied to another computer and then analysed
 
 # Hardware Needed
 All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices). Cost can be reduced by leaving out optional components, or reducing the number of sensors used.
