@@ -11,13 +11,17 @@ There are no commercially avaialble off the shelf tools to record what is needed
 # Hardware Needed
 All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices)
 
-- Raspberry Pi Zero 2 W
-- Adafruit INA260 Breakout Voltage and Current Sensor
-- Adafruit GPS Breakout
-- LCD2004 screen module with PCF8574 I2C controller (for example freenove LCD2004, which combines both into a single package)
-- Optional: GPS Antenna and connecting cable
-- Various wires and connectors to link things together
-- 
+| Hardware                  | Image | Description | Required | Link |
+| --------------------------- | --- | --- | ---- | --- | 
+| Raspberry Pi Zero 2 W | ![image](https://github.com/user-attachments/assets/908d660e-8008-4785-9e97-460538e46870) | Microcomputer chosen as it runs on very little power cand can be easily programmed. If possible get the "WH" model as it already has the header pins soldered on saving some work | Yes | [Link](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
+| Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates (Version 3) | ![image](https://github.com/user-attachments/assets/1559135c-964e-4596-9e3b-0be03b289cbe) | GPS Sensor with 1/10 second capture frequency | Yes | [Link](https://thepihut.com/products/adafruit-ultimate-gps-breakout-66-channel-w-10-hz-updates) |
+| Freenove LCD2004 | ![image](https://github.com/user-attachments/assets/be971ebc-6eaf-4d04-9de1-8cf559d1bc2c) |  LCD2004 screen module with PCF8574 I2C controller. There are Adafruit and generic versions of this. | Yes | [Link](https://store.freenove.com/products/fnk0079?variant=43034492797126) |
+| Waterproof DS18B20-Compatible Temperature Sensor with Resistor | ![image](https://github.com/user-attachments/assets/62dd4732-b075-497d-a42a-422fcae3ddc0) | Temperature sensor that can be used in a harsh environment for measuring motor temperature etc. | Yes | [Link](https://thepihut.com/products/waterproof-ds18b20-digital-temperature-sensor-extras)
+| Adafruit INA260 High or Low Side Voltage, Current, Power Sensor | ![image](https://github.com/user-attachments/assets/5e23132f-f37f-425d-99cd-e305cbca2c8a)  | Current and Voltage Sensor for measuring power | Yes| [Link](https://thepihut.com/products/adafruit-ina260-high-or-low-side-voltage-current-power-sensor-ada4226) |
+| GPS Antenna - External Active Antenna - 3-5V 28dB 5 Meter SMA | ![image](https://github.com/user-attachments/assets/c5b3984f-ceab-4372-8106-e0a4daca634d)  |  External antenna for the GPS module to improve reception and increase precision for GPS readings. This is not needed as the GPS modulae has an inbuilt antenna, but it allows the GPS module to be hidden away in the final version. | Optional | [Link](https://thepihut.com/products/gps-antenna-external-active-antenna-3-5v-28db-5-meter-sma) |
+| SMA to uFL/u.FL/IPX/IPEX RF Adapter Cable | ![image](https://github.com/user-attachments/assets/ff412d27-0ad2-417f-94b4-1099345a3e3a) | Used with the GPS antenna to be able to connect it to the GPS Breakout Board | Optional | [Link](https://thepihut.com/products/sma-to-ufl-u-fl-ipx-ipex-rf-adapter-cable) |
+| Various wires and connectors to link things together | | | Yes | |
+
 
 # Setting up the raspberry Pi
 
