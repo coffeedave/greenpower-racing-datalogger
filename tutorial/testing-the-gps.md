@@ -38,6 +38,13 @@ sudo killall gpsd
 sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
 ```
 
+Once the red flashing lock light goes out, check the GPS is recieving by using the following command:
+```
+cgps -s
+```
+This will display the current data from the GPS module which will look a bit like this:
+
+<INSERT PICTURE OF CGPS OUTPUT>
 ```
 sudo pip3 install adafruit-circuitpython-gps
 ```
