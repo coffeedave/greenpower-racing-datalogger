@@ -22,4 +22,15 @@ Other Connections:
 - Connect the FIX pin to GPIO 23 so we can  monitor the GPS fix status.
 
 A diagram of the circuit is below:
+![image](../images/gps_circuit_image.svg)
 
+Once connected and turned on the "Fix" LED on the gps board should start flashing red to indicate that it is looking for satellites. When it finds a lock then this will change to a solid green colour.
+
+# Setting up the Pi to use
+
+1. First we need to install the GPS drivers, and GPS service software so the Pi knows how to communicate with the GPS module. This install is ver large and can take a long time to install.
+```
+sudo apt-get install gpsd gpsd-clients
+```
+
+2. 
