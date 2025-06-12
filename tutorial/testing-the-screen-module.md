@@ -38,4 +38,11 @@ sudo apt-get install python3-smbus
 
 # Circuit
 
+To connect the MKE-M08 LCD2004 I2C Module to the Raspberry Pi Zero 2 W, follow these connections:
+
+- GND (LCD) to Ground (Raspberry Pi)
+- 5V (LCD) to 5v (Raspberry Pi)
+- SDA (LCD) to GPIO 2 Serial Data (Raspberry Pi)
+- SCL (LCD) to GPIO 3 Serial Clock (Raspberry Pi)
+
 ![circuit_image](https://github.com/user-attachments/assets/381bc3e0-4613-4440-9852-ffdb81b34f13)
