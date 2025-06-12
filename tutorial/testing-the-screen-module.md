@@ -34,3 +34,8 @@ sudo apt-get install python-smbus
 sudo apt-get install python3-smbus
 ```   
 5. If you get messages saying these modules are already installed and up to date, then that is fine.
+
+
+# Circuit
+
+![circuit_image](https://github.com/user-attachments/assets/381bc3e0-4613-4440-9852-ffdb81b34f13)
