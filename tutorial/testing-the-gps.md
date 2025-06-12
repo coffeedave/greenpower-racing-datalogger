@@ -33,4 +33,11 @@ Once connected and turned on the "Fix" LED on the gps board should start flashin
 sudo apt-get install gpsd gpsd-clients
 ```
 
-2. 
+```
+sudo killall gpsd
+sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
+```
+
+```
+sudo pip3 install adafruit-circuitpython-gps
+```
