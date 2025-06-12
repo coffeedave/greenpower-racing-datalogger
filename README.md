@@ -40,5 +40,5 @@ We are going to be using Python as the programming language for each module, so 
 
 Each of the next sections can be done in any order, but make sure each is working before you move on.
 
-Testing the Screen Module
-Testing the GPS Module
+1. [Testing the Screen Module](./tutorial/testing-the-screen-module.md)
+2. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
