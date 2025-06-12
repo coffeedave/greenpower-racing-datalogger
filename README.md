@@ -11,8 +11,8 @@ There are no commercially avaialble off the shelf tools to record what is needed
 # Hardware Needed
 All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices). Cost can be reduced by leaving out optional components, or reducing the number of sensors used.
 
-| Hardware                  | Image | Description | Required | Link |
-| --------------------------- | --- | --- | ---- | --- | --- |
+| Hardware                    | Image | Description | Required | Link |
+| --------------------------- | ----- | ----------- | -------- | ---- | 
 | Raspberry Pi Zero 2 W | ![image](https://github.com/user-attachments/assets/908d660e-8008-4785-9e97-460538e46870) | Microcomputer chosen as it runs on very little power cand can be easily programmed. If possible get the "WH" model as it already has the header pins soldered on saving some work | Yes | [Link](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) |
 | Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates (Version 3) | ![image](https://github.com/user-attachments/assets/1559135c-964e-4596-9e3b-0be03b289cbe) | GPS Sensor with 1/10 second capture frequency | Yes | [Link](https://thepihut.com/products/adafruit-ultimate-gps-breakout-66-channel-w-10-hz-updates) |
 | Freenove LCD2004 | ![image](https://github.com/user-attachments/assets/be971ebc-6eaf-4d04-9de1-8cf559d1bc2c) |  LCD2004 screen module with PCF8574 I2C controller. There are Adafruit and generic versions of this. | Yes | [Link](https://store.freenove.com/products/fnk0079?variant=43034492797126) |
