@@ -21,7 +21,7 @@ Data Connection:
 - Connect the Data pin of the DS18B20 Digital Temperature Sensor to GPIO 4 of the Raspberry Pi Zero 2 W.
 - Connect the Data pin of the DS18B20 Digital Temperature Sensor to to pin2 of the Resistor.
 
-![image](./images/temperature_circuit_image.svg)
+![image](../images/temperature_circuit_image.svg)
 
 # Setting up the Pi to Read Temperature
 
@@ -70,3 +70,15 @@ Your temperature sensor is now setup and working, so now we can try using it fro
 
 # Reading the temperature from a Python program
 
+A sample python program to read the temperature and output it to the console every second is present in the examples folder.
+
+1. Go to the examples folder
+```
+cd ~
+cd greenpower-racing-datalogger/examples
+```
+2. Run the sample program
+```
+python ./read-temperature-example.py
+
+This example should output the temperature once every second to the command line.
