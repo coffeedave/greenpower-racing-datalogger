@@ -80,5 +80,11 @@ cd greenpower-racing-datalogger/examples
 2. Run the sample program
 ```
 python ./read-temperature-example.py
-
+```
 This example should output the temperature once every second to the command line.
+
+
+## Things to Try
+
+- Put the sensor in a glass fo cold water, can you see the temperature change?
+- Can you update the python program to write the time and temperature out to a file once a second 
