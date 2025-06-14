@@ -10,11 +10,11 @@ This project is designed to be a tutorial and guide to create a data logger from
 ## Design Principles
 This data logger is intended to be able to be constructed by a School team (Year 7+) on thier own out of commonly available parts. Electronics, soldering, Linux command line, Python programming, 3D CAD, 3D printing and other skills are needed to be able to complete and test the logger. To install it in the car the team will need to create cases for all the components as well as work out how to run a wiring loom to bring all the sensor data back to the location of the RPi.
 
-In general the goals are:
+In general the design principles are:
 - Common off the shelf, easily replacable components (Someone is going to break them as some point!)
 - No custom PCB boards or integrated circuits
 - Able to be assembled and tested in sections on breadboards to get familiar with each component
-- Provides a reliable, tested way to assemble the data logger to minimise frustration and troubleshooting
+- Provide a reliable, tested way to assemble the data logger to minimise frustration and troubleshooting
 - Uses tools and technology a secondary school DT and computing departments are likey to already have access to (3d Printers, Raspberry Pi's etc.)
 - Focus on low cost wherever possible
 - Provide working python code samples for each component to simplify testing
