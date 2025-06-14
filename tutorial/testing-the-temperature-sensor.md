@@ -58,7 +58,7 @@ ls
 ```
 cd 28-0e24618ad8a6
 ```
-6. In this folder all the one wire data appears as files. Run the following command to output the temperature from the temperature file, this will give you the current temperature. You will need to divide the number by 100 to get the temperature in deg C)
+6. In this folder all the one wire data appears as files. Run the following command to output the temperature from the temperature file, this will give you the current temperature. You will need to divide the number by 1000 to get the temperature in deg C.
 ```
 cat temperature
 ```
