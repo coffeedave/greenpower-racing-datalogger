@@ -87,7 +87,7 @@ This will create a copy of all the files here in a folder called greenpower-raci
 If you need to update the files to the latest version you can use the following command (**Note:**
  this will potentially overwrite any modifications to code made by students)
 
- ``
+```
 cd ~
 cd greenpower-racing-datalogger
 git pull
