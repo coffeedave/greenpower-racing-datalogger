@@ -1,5 +1,5 @@
 # Greenpower Racing Datalogger
-This is a project to create a Raspberri Pi Zero 2 based data logger for Greenpower Electric Car Racing.
+This is a project to create a Raspberry Pi Zero 2 based data logger for Greenpower Electric Car Racing.
 
 Greenpower run an electric car racing series for schools, [GreenPower Formula 24](https://www.greenpower.co.uk/), where they can build and race an electric car from scratch or from a kit. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
 
