@@ -1,13 +1,26 @@
-# GHS Racing Datalogger
+# Greenpower Racing Datalogger
 Project to Create and document creation of a Raspberri Pi Zero 2 based data logger for Greenpower Electric Car Racing
 
-GHS have an electric car racing team that competes in the [GreenPower Formula 24](https://www.greenpower.co.uk/) racing series. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
+Greenpower run an electric car racing series for schools, [GreenPower Formula 24](https://www.greenpower.co.uk/), where they can build and race an extric car from scratch or from a kit. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
 
 There are no commercially avaialble off the shelf tools to record what is needed, and as a result this project is designed to be a tutorial and guide to create a data logger from scratch using common raspberry pi based components that the team can build and utilise for race performance.
 
+## Design Principles
+This data logger is intended to be able to be constructed by a School team (Year 7+) on thier own out of commonly available parts. Electronics, soldering, Linux command line, Python programming, 3D CAD, 3D printing and other skills are needed to be able to complete and test the logger. To install it in the car the team will need to create cases for all the components as well as work out how to run a wiring loom to bring all the sensor data back to the location of the RPi.
+
+In general the goals are:
+- Common off the shelf, easily replacable components (Someone is going to break them as some point!)
+- No custom PCB boards or integrated circuits
+- Able to be assembled and tested in sections on breadboards to get familiar with each component
+- Provides a reliable, tested way to assemble the data logger to minimise frustration and troubleshooting
+- Uses tools and technology a secondary school DT and computing departments are likey to already have access to (3d Printers, Raspberry Pi's etc.)
+- Focus on low cost wherever possible
+- Provide working python code samples for each component to simplify testing
+- Provide sample files for any 3D printed parts that can be customised
+
 # High Level Design Overview
 
-The overall goal is to get a set of data about the car with timestamps that can be analysed by the team after each race or practice session. For the the initial version of the datalogger the following sensors are to be used:
+The goal is to get a set of data about the car with timestamps that can be analysed by the team after each race or practice session. For the the initial version of the datalogger the following sensors are to be used:
 
 - GPS Sensor for location, speed and for accurate clock timing
 - Current / Voltage Sensor to measure battery usage and motor power
@@ -16,6 +29,14 @@ The overall goal is to get a set of data about the car with timestamps that can 
 Each of these sesnors is connected to a Raspberry Pi which reads from them frequently and writes the details from each to a file.
 
 After the race, the file can be copied to another computer and then analysed
+
+## Taking it Further
+Once the basic data logger is built there are lots of ways to extend the project, and the direction is up to the members of the racing team, but some ideas are:
+
+- Add additional sensors for other areas of the car
+- Be able to connect remotely to the data logger to get data quickly after a race
+- Make the data logger upload to a server so you can view Real-Time race information
+- Get the data logger to output in formats that can be read by professional racing software such as [VBOX Circuit Tools](https://www.vboxmotorsport.co.uk/index.php/en/circuit-tools) (which is free to use)
 
 # Hardware Needed
 All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices). Cost can be reduced by leaving out optional components, or reducing the number of sensors used.
@@ -39,7 +60,14 @@ All hardware can be obtained easily from thepihut or Amazon. Total cost is aroun
 
 The raspberry pi should have the latest RasberryPi OS running on it, setup as per the instructions on the Rasberry Pi Website. Use the raspberry Pi imager to get the pi setup with wifi networking and ssh (so we can connect to it remotely).
 
-Check and verify that it is possible to connect to the RPi using ssh (linux) or PuTTY (windows). There are plenty of tutorials out there to assist with this step, but if you can log into the Pi Remotely using these tools, then we're good to start the next step!
+Ensure the rasberry pi is fullly up to date by running the following at a command line:
+
+```
+sudo apt-get update
+sudo-apt-get upgrade
+```
+
+Check and verify that it is possible to connect to the RPi remotely from another computer using ssh (linux) or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty) (Windows). There are plenty of tutorials out there to assist with this step, but if you can log into the Pi Remotely using these tools, then we're good to start the next step!
 
 ## Building the Data Logger
 
@@ -47,7 +75,12 @@ To create the data logger, it makes sense to test each component individually wi
 
 We are going to be using Python as the programming language for each module, so it will be easy to combine the code for each component together at the end.
 
-Each of the next sections can be done in any order, but make sure each is working before you move on.
+Each of the next sections takes you through building and testing a system with each component. Make sure each is working before you move on as some rely on you completing the earlier sections.
 
 1. [Testing the Screen Module](./tutorial/testing-the-screen-module.md)
 2. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
+3. Testing the Temperature Module
+4. Testing the Current and Voltage Module
+5. Connecting everything together
+6. Coding the data logger
+7. Installation in the car
