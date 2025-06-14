@@ -75,6 +75,24 @@ sudo-apt-get upgrade
 
 Check and verify that it is possible to connect to the RPi remotely from another computer using ssh (linux) or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty) (Windows). There are plenty of tutorials out there to assist with this step, but if you can log into the Pi Remotely using these tools, then we're good to start the next step!
 
+To get all the sample code and files onto the raspberry pi you can clone this github repository to the home folder.
+
+```
+cd ~
+git clone https://github.com/coffeedave/greenpower-racing-datalogger.git
+```
+
+This will create a copy of all the files here in a folder called greenpower-racing-datalogger
+
+If you need to update the files to the latest version you can use the following command (**Note:**
+ this will potentially overwrite any modifications to code made by students)
+
+ ``
+cd ~
+cd greenpower-racing-datalogger
+git pull
+```
+
 ## Building the Data Logger
 
 To create the data logger, it makes sense to test each component individually with the RPi, get it working, and be able to write some code to control it. That way you get familiar with how each component works, understand how to connect it up, and ensure that the RPi can use each successfully. One all components are working, we can then connect everything up and write some code to link them all together into the full scale data logger!
