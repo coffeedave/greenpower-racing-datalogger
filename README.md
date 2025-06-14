@@ -1,9 +1,11 @@
 # Greenpower Racing Datalogger
-Project to Create and document creation of a Raspberri Pi Zero 2 based data logger for Greenpower Electric Car Racing
+This is a project to create a Raspberri Pi Zero 2 based data logger for Greenpower Electric Car Racing.
 
-Greenpower run an electric car racing series for schools, [GreenPower Formula 24](https://www.greenpower.co.uk/), where they can build and race an extric car from scratch or from a kit. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
+Greenpower run an electric car racing series for schools, [GreenPower Formula 24](https://www.greenpower.co.uk/), where they can build and race an electric car from scratch or from a kit. As part of the racing series it's useful to be able to collect data on the car and driver performance, including speed, track position, component temeratures inside the car, power usage etc. With this information the car performance can be optimised and improved, and drivers coached to improve lap times and race distance.
 
-There are no commercially avaialble off the shelf tools to record what is needed, and as a result this project is designed to be a tutorial and guide to create a data logger from scratch using common raspberry pi based components that the team can build and utilise for race performance.
+There are no inexpensive, commercially available, off the shelf tools to record what is needed, and Greenpower is all about learning STEM so we should build one!
+
+This project is designed to be a tutorial and guide to create a data logger from scratch using common raspberry pi based components that the team can build and utilise for race performance.
 
 ## Design Principles
 This data logger is intended to be able to be constructed by a School team (Year 7+) on thier own out of commonly available parts. Electronics, soldering, Linux command line, Python programming, 3D CAD, 3D printing and other skills are needed to be able to complete and test the logger. To install it in the car the team will need to create cases for all the components as well as work out how to run a wiring loom to bring all the sensor data back to the location of the RPi.
@@ -28,14 +30,18 @@ The goal is to get a set of data about the car with timestamps that can be analy
 
 Each of these sesnors is connected to a Raspberry Pi which reads from them frequently and writes the details from each to a file.
 
-After the race, the file can be copied to another computer and then analysed
+There is also an optional screen, which can be used to show the driver live information on car performance, or to help understand if the RPi is up and running correctly.
+
+After the race, the file containing the race data can be copied to another computer and then analysed using any tools the team have at thier disposal such as Excel, charting software etc.
 
 ## Taking it Further
 Once the basic data logger is built there are lots of ways to extend the project, and the direction is up to the members of the racing team, but some ideas are:
 
 - Add additional sensors for other areas of the car
 - Be able to connect remotely to the data logger to get data quickly after a race
-- Make the data logger upload to a server so you can view Real-Time race information
+- Make the data logger upload to a second Rpi server so you can view Real-Time race information
+- Add 3G/4G mobile data to the logger so it is contactable on the far side of the track
+- Use the RPi as a controller for other aspects of the car
 - Get the data logger to output in formats that can be read by professional racing software such as [VBOX Circuit Tools](https://www.vboxmotorsport.co.uk/index.php/en/circuit-tools) (which is free to use)
 
 # Hardware Needed
