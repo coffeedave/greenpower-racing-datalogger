@@ -87,4 +87,12 @@ This example should output the temperature once every second to the command line
 ## Things to Try
 
 - Put the sensor in a glass fo cold water, can you see the temperature change?
-- Can you update the python program to write the time and temperature out to a file once a second 
+- Can you update the python program to write the time and temperature out to a file once a second
+
+# Sensors for Everything!
+
+One of the great things about the temperature sensors and One-wire is that you can easily have lots of them all connected up to the same pin (the practical limit is about 30 sensors, which is more than enough!). So one easy way to extend the logger is to add more temperature sensors. Each will get a different address, so you'll need to modify the python code to read from each of them individually.
+
+The circuit update for three sensors would look like this:
+
+![image](../images/temperature_circuit_three_sensors_image.svg)
