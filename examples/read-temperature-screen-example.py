@@ -58,7 +58,7 @@ while True:
       
     # Put the latest Temperature on the Screen
     lcd.setCursor(0,2)  # set cursor position
-    lcd.message( 'Temp: ' + str(read_temp()).format("{a:.1f}")+'\n' )# display Sensor temperature formatted to one decimal place  
+    lcd.message( 'Temp: ' + f"{read_temp():.1f}" +'\n' )# display Sensor temperature formatted to one decimal place  
 
     # Wait for one Second
     time.sleep(1)
