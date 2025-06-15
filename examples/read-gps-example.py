@@ -11,6 +11,7 @@ def getPositionData(gps):
         latitude = getattr(nx,'lat', "Unknown")
         longitude = getattr(nx,'lon', "Unknown")
         print("Your position: lon = " + str(longitude) + ", lat = " + str(latitude))
+        print("Speed is " + getattr(nx,'speed', "0"))
 
 gpsd = gps(mode=WATCH_ENABLE|WATCH_NEWSTYLE)
 
