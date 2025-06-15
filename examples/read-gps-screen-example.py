@@ -5,16 +5,15 @@ import time
 from PCF8574 import PCF8574_GPIO
 from Adafruit_LCD2004 import Adafruit_CharLCD
 
-def getPositionData(gps):
+def getSpeed(gps):
     nx = gpsd.next()
     # For a list of all supported classes and fields refer to:
     # https://gpsd.gitlab.io/gpsd/gpsd_json.html
     if nx['class'] == 'TPV':
-        latitude = getattr(nx,'lat', "Unknown")
-        longitude = getattr(nx,'lon', "Unknown")
-        print("Your position: lon = " + str(longitude) + ", lat = " + str(latitude))
-        print("Speed (km/h): " + str(getattr(nx,'speed', "0") * 3.6))
-    return getattr(nx,'speed', "0") * 3.6
+       
+        return float(getattr(nx,'speed', "0")) * 3.6
+    else: 
+        return 0.0
 
 gpsd = gps(mode=WATCH_ENABLE|WATCH_NEWSTYLE)
 
@@ -30,6 +29,7 @@ except:
     except:
         print ('I2C Address Error !')
         exit(1)
+
 # Create LCD, passing in MCP GPIO adapter.
 lcd = Adafruit_CharLCD(pin_rs=0, pin_e=2, pins_db=[4,5,6,7], GPIO=mcp)
 
