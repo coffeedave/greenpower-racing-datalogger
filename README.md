@@ -102,9 +102,9 @@ We are going to be using Python as the programming language for each module, so 
 Each of the next sections takes you through building and testing a system with each component. Make sure each is working before you move on as some rely on you completing the earlier sections.
 
 1. [Testing the Screen Module](./tutorial/testing-the-screen-module.md)
-2. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
-3. [Testing the Temperature Sensor](./tutorial/testing-the-temperature-sensor.md)
-4. Testing the Current and Voltage Module
+2. [Testing the Temperature Sensor](./tutorial/testing-the-temperature-sensor.md)
+3. Testing the Current and Voltage Module
+4. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
 5. Connecting everything together
-6. Coding the data logger
-7. Installation in the car
+7. Coding the data logger
+8. Installation in the car
