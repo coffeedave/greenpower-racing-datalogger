@@ -33,9 +33,10 @@ python3 -m venv env --system-site-packages
 source env/bin/activate
 ```
 
-4. Now install the Adafuit Blinka Library
+4. Now install the Adafuit Blinka Library and ina230 library
 ```
 pip3 install --upgrade adafruit-blinka
+sudo pip3 install adafruit-circuitpython-ina260
 ```
 
 ## Things to Try
