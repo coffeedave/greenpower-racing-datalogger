@@ -52,15 +52,13 @@ lcd = Adafruit_CharLCD(pin_rs=0, pin_e=2, pins_db=[4,5,6,7], GPIO=mcp)
 mcp.output(3,1)     # turn on LCD backlight
 lcd.begin(20,4)     # set number of LCD lines and columns
 lcd.setCursor(0,0)  # set cursor position
-lcd.message( 'Greenpower Datalogger')
+lcd.message( 'Greenpower')
 
-while True:
-    # Print the value of the temperature from the sensor
-    print('Temperature: ' + str(read_temp()) )	    
+while True:  
       
-    # Put the Temperature on the Screen
+    # Put the latest Temperature on the Screen
     lcd.setCursor(0,2)  # set cursor position
-    lcd.message( 'Temperature: ' + str(read_temp())+'\n' )# display CPU temperature  
+    lcd.message( 'Temp: ' + str(read_temp()).format()"{a:.1f}")+'\n' )# display Sensor temperature formatted to one decimal place  
 
     # Wait for one Second
     time.sleep(1)
