@@ -41,8 +41,7 @@ lcd.message( 'Greenpower')
 try:
     print("Application started!")
     while True:
-        getPositionData(gpsd)
-        lcd.message( 'Speed: ' + f"{getPositionData(gpsd):.1f}" +'\n' )# display Current Speed
+        lcd.message( 'Speed: ' + f"{getSpeed(gpsd):.1f}" +'\n' )# display Current Speed
         time.sleep(1.0)
 
 except (KeyboardInterrupt):
