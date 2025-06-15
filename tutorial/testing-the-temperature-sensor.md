@@ -42,7 +42,7 @@ sudo raspi-config
 
 Next, we need to enable the drivers for recording temperature via One-Wire
 
-1. Load the kernel drivers for measuring temperate
+1. Load the operating system drivers for measuring temperate
 ```
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
@@ -68,6 +68,8 @@ cat temperature
 ```
 ![image](https://github.com/user-attachments/assets/fc70dad2-5d14-4a51-a4c2-ed8423c45916)
 
+(Note: This command does not read the temperature of a cat. The "cat" command shows you the contents of a file)
+ 
 7. Check it is working by holding the temperature sensor to warm it up and running the command again. You should see the number change.
 
 Your temperature sensor is now setup and working, so now we can try using it from python.
@@ -92,6 +94,7 @@ This example should output the temperature once every second to the command line
 
 - Put the sensor in a glass fo cold water, can you see the temperature change?
 - Can you update the python program to write the time and temperature out to a file once a second? This is the first step in turning the sensor into a data-logger
+- Find a cat, and take it's temperature using the "cat temperature" command. (DO NOT put the sensor in the cat) 
 
 # Sensors for Everything!
 
