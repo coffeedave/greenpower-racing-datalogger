@@ -30,6 +30,7 @@ python3 -m venv env --system-site-packages
 
 3. activate python virtual environment
 ```
+cd ~
 source env/bin/activate
 ```
 
