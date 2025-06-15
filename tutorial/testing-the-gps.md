@@ -38,6 +38,20 @@ sudo killall gpsd
 sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
 ```
 
+Try editing gpsd startup script
+sudo pico /etc/default/gpsd
+![image](https://github.com/user-attachments/assets/454ba20b-4e84-4ef3-a340-d36adaae49cf)
+
+
+### Setting the System clock from the GPS Unit:
+https://area-51.blog/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
+Install NTP time server
+```
+sudo apt-get install ntp
+```
+
+sudo gpsinit -s 115200 -i set_system_clock /dev/serial0
+
 Once the red flashing lock light goes out, check the GPS is recieving by using the following command:
 ```
 cgps -s
@@ -45,6 +59,20 @@ cgps -s
 This will display the current data from the GPS module which will look a bit like this:
 
 <INSERT PICTURE OF CGPS OUTPUT>
+
+### Troubleshooting
+Raw GPS ouptut can be seen via running the gpsmon command and seeing if it outputs raw data from the device
+```
+gpsmon /dev/serial0
+```
+This will generate output like this:
+
+![image](https://github.com/user-attachments/assets/8f86aec0-b076-4d87-a414-aaedffc55054)
+
+It this keeps updating then the circuit is connected correctly
+
+
+  
 ```
 sudo pip3 install adafruit-circuitpython-gps
 ```
