@@ -44,6 +44,14 @@ Once the basic data logger is built there are lots of ways to extend the project
 - Use the RPi as a controller for other aspects of the car
 - Get the data logger to output in formats that can be read by professional racing software such as [VBOX Circuit Tools](https://www.vboxmotorsport.co.uk/index.php/en/circuit-tools) (which is free to use)
 
+## Repository Struture
+
+This git repository is structured as follows:
+
+- tutorial - tutorials for building and creating the data logger and testing each component
+- examples - contains pythin code samples used in the tutorial
+- examples/lib - contains libray files needed by python to drive some of the components
+
 # Hardware Needed
 All hardware can be obtained easily from thepihut or Amazon. Total cost is around £85 (2025 prices). Cost can be reduced by leaving out optional components, or reducing the number of sensors used.
 
