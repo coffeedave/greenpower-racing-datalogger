@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-########################################################################
-# Filename    : I2CLCD2004.py
-# Description : Use the LCD display data
-# Author      : freenove
-# modification: 2022/06/28
-########################################################################
 from PCF8574 import PCF8574_GPIO
 from Adafruit_LCD2004 import Adafruit_CharLCD
 
@@ -24,11 +18,8 @@ def loop():
     mcp.output(3,1)     # turn on LCD backlight
     lcd.begin(20,4)     # set number of LCD lines and columns
     lcd.setCursor(0,0)  # set cursor position
-    lcd.message( 'FREENOVE')
-    lcd.setCursor(0,1)  # set cursor position
-    lcd.message( 'wwww.freenove.com')
+    lcd.message( 'Greenpower Datalogger')
     while(True):         
-        #lcd.clear()
         lcd.setCursor(0,2)  # set cursor position
         lcd.message( 'CPU: ' + get_cpu_temp()+'\n' )# display CPU temperature
         lcd.setCursor(0,3)  # set cursor position

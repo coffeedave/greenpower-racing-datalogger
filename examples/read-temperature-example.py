@@ -32,7 +32,7 @@ def read_temp():
 # Main body of the program
 while True:
     # Print the value of the temperature from the sensor
-	print('Temperature: ' + read_temp())	
+	print('Temperature: ' + str(read_temp()))	
       
     # Wait for one Second
 	time.sleep(1)
