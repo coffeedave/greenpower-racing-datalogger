@@ -49,7 +49,7 @@ sudo modprobe w1-therm
 ```
 2. Switch to the devices directory
 ```
-/sys/bus/w1/devices/
+cd /sys/bus/w1/devices/
 ```
 3. List the contents of the devices folder that should show one or more directories, each representing a one-wire device.
 ```
