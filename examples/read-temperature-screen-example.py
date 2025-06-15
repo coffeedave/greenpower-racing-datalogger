@@ -41,7 +41,7 @@ lcd.message( 'Greenpower Datalogger')
 
 while True:
     # Print the value of the temperature from the sensor
-	print('Temperature: ' + str(read_temp()) )	
+    print('Temperature: ' + str(read_temp()) )	    
       
     # Put the Temperature on the Screen
     lcd.setCursor(0,2)  # set cursor position
