@@ -111,7 +111,7 @@ Each of the next sections takes you through building and testing a system with e
 
 1. [Testing the Screen Module](./tutorial/testing-the-screen-module.md)
 2. [Testing the Temperature Sensor](./tutorial/testing-the-temperature-sensor.md)
-3. Testing the Current and Voltage Module
+3. [Testing the Current and Voltage Module](./tutorial/testing-the-voltage-sensor.md)
 4. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
 5. Connecting everything together
 7. Coding the data logger
