@@ -25,7 +25,6 @@ In general the design principles are:
 The goal is to get a set of data about the car with timestamps that can be analysed by the team after each race or practice session. For the the initial version of the datalogger the following sensors are to be used:
 
 - GPS Sensor for location, speed and for accurate clock timing
-- Current / Voltage Sensor to measure battery usage and motor power
 - Temperature sensor to measure the motor temperature and understand if it is overheating
 
 Each of these sesnors is connected to a Raspberry Pi which reads from them frequently and writes the details from each to a file.
@@ -61,7 +60,6 @@ All hardware can be obtained easily from thepihut or Amazon. Total cost is aroun
 | Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates (Version 3) | ![image](https://github.com/user-attachments/assets/1559135c-964e-4596-9e3b-0be03b289cbe) | GPS Sensor with 1/10 second capture frequency | Yes | [Link](https://thepihut.com/products/adafruit-ultimate-gps-breakout-66-channel-w-10-hz-updates) |
 | Freenove LCD2004 | ![image](https://github.com/user-attachments/assets/be971ebc-6eaf-4d04-9de1-8cf559d1bc2c) |  LCD2004 screen module with PCF8574 I2C controller. There are Adafruit and generic versions of this. | Yes | [Link](https://store.freenove.com/products/fnk0079?variant=43034492797126) |
 | Waterproof DS18B20-Compatible Temperature Sensor with Resistor | ![image](https://github.com/user-attachments/assets/62dd4732-b075-497d-a42a-422fcae3ddc0) | Temperature sensor that can be used in a harsh environment for measuring motor temperature etc. | Yes | [Link](https://thepihut.com/products/waterproof-ds18b20-digital-temperature-sensor-extras)
-| Adafruit INA260 High or Low Side Voltage, Current, Power Sensor | ![image](https://github.com/user-attachments/assets/5e23132f-f37f-425d-99cd-e305cbca2c8a)  | Current and Voltage Sensor for measuring power | Yes| [Link](https://thepihut.com/products/adafruit-ina260-high-or-low-side-voltage-current-power-sensor-ada4226) |
 | GPS Antenna - External Active Antenna - 3-5V 28dB 5 Meter SMA | ![image](https://github.com/user-attachments/assets/c5b3984f-ceab-4372-8106-e0a4daca634d)  |  External antenna for the GPS module to improve reception and increase precision for GPS readings. This is not needed as the GPS modulae has an inbuilt antenna, but it allows the GPS module to be hidden away in the final version. | Optional | [Link](https://thepihut.com/products/gps-antenna-external-active-antenna-3-5v-28db-5-meter-sma) |
 | SMA to uFL/u.FL/IPX/IPEX RF Adapter Cable | ![image](https://github.com/user-attachments/assets/ff412d27-0ad2-417f-94b4-1099345a3e3a) | Used with the GPS antenna to be able to connect it to the GPS Breakout Board | Optional | [Link](https://thepihut.com/products/sma-to-ufl-u-fl-ipx-ipex-rf-adapter-cable) |
 | Various wires and connectors  | ![image](https://github.com/user-attachments/assets/ac88306e-6e33-4644-8d53-343280e82ea3) | To link things together. May also need some RJ45 connectors and sockets or similar for mounting the wiring loom in the car and being able to disconnect it | Yes | |
@@ -111,8 +109,7 @@ Each of the next sections takes you through building and testing a system with e
 
 1. [Testing the Screen Module](./tutorial/testing-the-screen-module.md)
 2. [Testing the Temperature Sensor](./tutorial/testing-the-temperature-sensor.md)
-3. [Testing the Current and Voltage Module](./tutorial/testing-the-voltage-sensor.md)
-4. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
-5. Connecting everything together
-7. Coding the data logger
-8. Installation in the car
+3. [Testing the GPS Module](./tutorial/testing-the-gps-module.md)
+4. Connecting everything together
+5. Coding the data logger
+6. Installation in the car
