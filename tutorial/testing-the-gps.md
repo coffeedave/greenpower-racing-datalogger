@@ -71,8 +71,31 @@ This will generate output like this:
 
 It this keeps updating then the circuit is connected correctly
 
+## Using the GPS in Python
 
-  
+
+1. ensure the python virtual environment module ins installed so we can create a new Virtual environment for python and install the required libraries
 ```
+cd ~
+sudo apt install python3-venv
+```
+
+2. Create a virtual environment
+```
+python3 -m venv env --system-site-packages
+```
+
+3. activate python virtual environment
+```
+cd ~
+source env/bin/activate
+```
+
+4. Now install the Adafuit Blinka Library and ina230 library
+```
+pip3 install adafruit-circuitpython-gps
+```
+  
+
 sudo pip3 install adafruit-circuitpython-gps
 ```
