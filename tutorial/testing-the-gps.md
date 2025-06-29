@@ -94,8 +94,7 @@ source env/bin/activate
 4. Now install the Adafuit Blinka Library and ina230 library
 ```
 pip3 install adafruit-circuitpython-gps
-```
-  
+ 
 
-sudo pip3 install adafruit-circuitpython-gps
+pip3 install pyproj
 ```
